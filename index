@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>rentAcar</title>
+<script src="jquery-1.11.1.js"></script>
+<script src="project.js"></script>
+<link href="project.css"  rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+        <nav>
+<ul id="navlink">
+<li><a href="rent.html" class="btn">Rent a car</a></li>
+<li><a href="login.html" class="btn">log in</a></li>
+<li><a href="register.html" class="btn">register</a></li>
+</ul>
+</nav>
+<header>
+    <div class="main">
+        <form name="rentCar" style="padding-top:80px;padding-left:750px;">
+username:</br>
+<input type="text" id="username"></input></br>
+Id number:</br>
+<input type="text" id="id"></input></br>
+Phone:</br>
+<input type="text" id="phone"></input></br>
+E.mail</br>
+<input type="text" id="email"></input>
+<p>
+<input type="submit" value="RENT NOW!" class="submit" onclick="validateForm()"></input>
+</form></div>
+    </header>
+  
+
+<div id="bigmain">
+<aside style="flex:1;">
+<ul id="aside">
+<li><a href="login.html" class="btna">log in</a></li></br>
+<li><a href="rent.html" class="btna">Rent a car</a></li></br>
+<li><a href="register.html" class="btna">register now</a></li></br>
+</ul>
+</aside>
+
+<div style="flex:4;background-color:rgba(191, 139, 110, 0.68);text-align:center;">
+    <br>
+   Rent a car in Israel with Sixt and be on your way in a flash!<br>
+    If you rent a car in Israel, we will do our best to give you the best customer service around
+</div>
+
+</div>
+
+
+<footer>
+<div id="rights"style="width:1056px;margin-left:300px;color:#db5050;"></div>
+</footer>
+
+</body>
