@@ -40,3 +40,57 @@ function validateForm()
    }
    return( true );
 }
+
+function validateSelection(){
+	var source = document.getElementById('source');
+	if(source.value == "Please Choose"){
+		alert('Please Choose a source city');
+		source.focus();
+		return false;
+	}
+	
+	if(dest.value == "Please Choose"){
+		alert('Please Choose a destinaion city');
+		dest.focus();
+		return false;
+	}
+	else{
+		return true;
+	}
+}
+
+
+function madeSelection(){
+	if (validateSelection()) {
+		getPrice();
+	}
+	
+}
+
+var city =[{source:'Tel Aviv',dest:'Jerusalem', dist:60},
+          {source:'Eilat',dest:'Tel Aviv',dist:200},
+          {source:'haifa',dest:'Tel Aviv',dist:350},
+          {source:'Jerusalem',dest:'haifa',dist:250},
+          {source:'Jerusalem',dest:'Eilat',dist:350}
+          ]
+
+
+function getPrice(){
+    
+    obj = JSON.parse(city);
+    
+    if(obj.city.dist == 60){
+    document.getElementById('price').innerHTML = 'Your price is 350'; 
+        return false;
+    }
+    
+     if(obj.city.dist == 200){
+    document.getElementById('price').innerHTML = 'Your price is 400';
+          return false;
+}
+    if(obj.city.dist == 350){
+    document.getElementById('price').innerHTML = 'Your price is 250';
+         return false;
+}
+    return true;
+}
