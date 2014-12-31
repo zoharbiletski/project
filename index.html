@@ -10,16 +10,16 @@
 
 <body>
         <nav>
-<ul id="navlink">
+<ul>
 <li><a href="rent.html" class="btn">Rent a car</a></li>
 <li><a href="login.html" class="btn">log in</a></li>
 <li><a href="register.html" class="btn">register</a></li>
 </ul>
 </nav>
 <header>
-    <div class="main">
-        <form name="rentCar" style="padding-top:80px;padding-left:750px;">
-username:</br>
+    <div style="width:1009pxpx;margin-left:100px;background-image: url(pictures/main.jpg);height:542px;width:1009px;">
+        <form name="rentCar" style="padding-top:50px;padding-left:750px;">
+Username:</br>
 <input type="text" id="username"></input></br>
 Id number:</br>
 <input type="text" id="id"></input></br>
@@ -42,17 +42,35 @@ E.mail</br>
 </ul>
 </aside>
 
-<div style="flex:4;background-color:rgba(191, 139, 110, 0.68);text-align:center;">
+<div style="flex:4;background-color:rgba(191, 139, 110, 0.68);text-align:center;color:black;">
     <br>
-   Rent a car in Israel with Sixt and be on your way in a flash!<br>
-    If you rent a car in Israel, we will do our best to give you the best customer service around
+   Rent a car in Israel with us and be on your way in a flash!<br>
+    If you rent a car in Israel, we will do our best to give you<br>the best customer service around
+	<br>
+	<form name="carPrice">
+Source: <select id="source">
+<option>Please Choose</option>
+  <option>Tel Aviv</option>
+  <option>Jerusalem</option>
+  <option>Haifa</option>
+  <option>Eilat</option>
+</select>
+Destination: <select id="dest">
+<option>Please Choose</option>
+<option>Tel Aviv</option>
+  <option>Jerusalem</option>
+  <option>Haifa</option>
+  <option>Eilat</option></select> <input type="button" value="Submit" onclick="madeSelection()"class="submit"></input>
+</form>
+<p id="price"></p>
+
 </div>
 
 </div>
 
 
 <footer>
-<div id="rights"style="width:1056px;margin-left:300px;color:#db5050;"></div>
+<div id="rights"style="width:250px;margin-left:100px;color:#db5050;"></div>
 </footer>
 
 </body>
